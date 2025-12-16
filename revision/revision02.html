@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listening Quiz 1 | KLearn Korean</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a class="logo" href="../index.html">KLearn</a></li>
+                <li><a href="../course.html">Courses</a></li>
+                <li><a href="../vocab.html">Vocabulary</a></li>
+                <li><a href="../style.html">Style</a></li>
+                <li><a href="../revision.html">Revision</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="quiz-container">
+            <header class="quiz-header">
+                <h1>Listening Quiz 1</h1>
+                <p class="quiz-description">
+                    Listen carefully to the audio track below and answer the following questions based on what you hear.
+                    You can play the audio as many times as needed.
+                </p>
+                <span class="quiz-meta">Answer all 5 Questions</span>
+                
+            </header>
+            
+            <div class="audio-player-section">
+                <div class="audio-player">
+                    <audio id="quizAudio" controls>
+                        <source src="passage1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+                <div class="audio-controls">
+                    <button class="audio-btn" onclick="playFromBeginning()">
+                        🔄 Play from Start
+                    </button>
+                    <button class="audio-btn" onclick="togglePlaybackSpeed()">
+                        ⚡ Speed: 1x
+                    </button>
+                    <button class="audio-btn" onclick="downloadAudio()">
+                        ⬇️ Download Audio
+                    </button>
+                </div>
+                
+            </div>
+            
+            <div class="questions">
+                <form id="quiz2">
+                    <div class="question" data-type="mc" data-answer="A">
+                        <h3>1. What is the main topic of the conversation?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q1" value="A">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">Planning a trip</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="B">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">Discussing work projects</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="C">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">Shopping for groceries</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="D">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">Making dinner plans</span>
+                            </label>
+                        </div>
+                        <span class="result"></span>
+                    </div>
+                    
+                    <div class="question" data-type="mc" data-answer="B">
+                        <h3>2. Where do they decide to go?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q2" value="A">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">The beach</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="B">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">The mountains</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="C">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">A museum</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="D">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">A restaurant</span>
+                            </label>
+                        </div>
+                        <span class="result"></span>
+                    </div>
+                    
+                    <div class="question" data-type="mc" data-answer="C">
+                        <h3>3. What time are they planning to meet?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q3" value="A">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">8:00 AM</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="B">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">9:30 AM</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="C">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">10:00 AM</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="D">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">11:00 AM</span>
+                            </label>
+                        </div>
+                        <span class="result"></span>
+                    </div>
+                    
+                    <div class="question" data-type="mc" data-answer="C">
+                        <h3>4. Who do they want to invite to join together?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q4" value="A">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">YuJin</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="B">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">JiSoo</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="C">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">Anna</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="D">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">Mary</span>
+                            </label>
+                        </div>
+                        <span class="result"></span>
+                    </div>
+
+                    <div class="question" data-type="mc" data-answer="D">
+                        <h3>5. Why do they invite her?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q5" value="A">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">Because it is holiday.</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="B">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">Because she like hiking.</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="C">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">Because they want to get closer.</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="D">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">Because it is Anna's birthday.</span>
+                            </label>
+                        </div>
+                        <span class="result"></span>
+                    </div>
+
+                    <div class="submit-section">
+                        <button type="button" class="submit-btn" onclick="checkAllAnswers()">
+                            Submit All Answers
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="finalScore" class="score"></div>
+            </div>
+            
+            <div class="quiz-footer">
+                <a class="direction" href="../revision.html">
+                    ← Back to Revision
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <p>Self-made Korean e-learning website @yolanda</p>
+    </footer>
+</body>
+</html>
