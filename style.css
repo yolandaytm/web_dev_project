@@ -3414,3 +3414,210 @@ tr {
       justify-content: center;
   }
 }
+@media (max-width: 768px) {
+    /* Reset viewport sizing */
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    main {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .grid.course-layout {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    /* Fix for horizontal scrolling */
+    * {
+        max-width: 100%;
+    }
+    
+    img, table, .comparison-table, .situation-table {
+        max-width: 100%;
+    }
+    
+    /* Force content to fit within viewport */
+    .speech-level, 
+    .intro-section, 
+    .summary-section, 
+    .choose-section, 
+    .examples-section, 
+    .quiz-section {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Specific fix for tables causing overflow */
+    .comparison-table-wrapper,
+    .situation-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Make sure all content is contained */
+    .example-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .example-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Sidebar fixes */
+    .sidebar {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .nav-link {
+        min-width: 120px;
+        text-align: center;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra strict constraints for small phones */
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+    .site-header {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .site-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    
+    .site-nav li {
+        margin: 2px;
+    }
+    
+    .site-nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Mobile-specific grid reset */
+    .grid.course-layout {
+        display: block;
+    }
+    
+    /* Force all content to be single column */
+    .content > * {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+    }
+    
+    /* Tables - force to cards on very small screens */
+    table {
+        display: block;
+        width: 100%;
+    }
+    
+    thead {
+        display: none;
+    }
+    
+    tbody {
+        display: block;
+        width: 100%;
+    }
+    
+    tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border: 1px solid #e2e8f0;
+    }
+    
+    td {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    
+    td:last-child {
+        border-bottom: none;
+    }
+    
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #2563eb;
+        flex: 1;
+    }
+    
+    td span, td div {
+        flex: 1;
+        text-align: right;
+    }
+    
+    /* Remove any horizontal margins/padding that cause overflow */
+    .content * {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Specific container fixes */
+    .speech-level h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .level-subtitle {
+        text-align: center;
+        padding: 0 10px;
+    }
+}
