@@ -103,8 +103,3 @@ function togglePlaybackSpeed() {
     document.querySelector('.audio-btn:nth-child(2)').innerHTML = 
         `⚡ Speed: ${playbackSpeed}x`;
 }
-
-function downloadAudio() {
-    // This would typically link to the actual audio file
-    alert('Audio download feature would be implemented here.');
-}
