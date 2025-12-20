@@ -2732,20 +2732,20 @@ tr {
 
 .component-header {
   padding: 20px;
-  color: white;
+  color: #000;
   text-align: center;
 }
 
 .component-header.subject {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: #ffeaa7;
 }
 
 .component-header.object {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: #a29bfe;
 }
 
 .component-header.verb {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: #55efc4;
 }
 
 .component-header h4 {
@@ -2839,7 +2839,7 @@ tr {
 
 /* Key Points */
 .key-points {
-  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  background: #b3f1f8;
   border-radius: 16px;
   padding: 30px;
   margin: 40px 0;
